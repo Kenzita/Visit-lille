@@ -38,7 +38,7 @@
                                 <button type="submit" id="val">Valider</button>
                                 <!-- button onclick="window.location.href='https://w3docs.com';"> -->
                                 <br>
-                                <button type="button" class="btn btn-link" data-bs-target="#exampleModalToggle3"
+                                <button type="button" class="btn btn-link" data-bs-target="#pageInscription"
                                     data-bs-toggle="modal">Pas de compte ?</button>
                             </div>
                             <div class="modal-footer">
@@ -60,11 +60,34 @@
                             </div>
                             <div class="modal-body">
                                 <h6>Adresse associée au compte</h6>
-                                <input type="text" name="address" id="add">
+                                <input required type="text" name="address" id="add">
                                 <br>
-                                <button type="submit" id="sub" data-bs-target="#exampleModalToggle4"
+                                <button type="submit" id="sub" data-bs-target="#pageCodeVerification"
                                     data-bs-toggle="modal">Soumettre et recevoir
                                     un code</button>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" data-bs-target="#pageConnexion"
+                                    data-bs-toggle="modal">RETOUR VERS CONNEXION</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="pageCodeVerification" aria-hidden="true"
+                    aria-labelledby="pageCodeVerificationLabel" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="verif">VERIFICATION</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Entrez le code de vérification</h6>
+                                <input type="text" name="code" id="code" required>
+                                <br>
+                                <button type="submit" id="subCode" data-bs-target="" data-bs-toggle="modal"
+                                    onclick="window.location.href='https://youtu.be/xm3YgoEiEDc';">Confirmer</button>
                                 <!-- onclick="window.location.href='https://youtu.be/xm3YgoEiEDc';" -->
                             </div>
                             <div class="modal-footer">
@@ -74,8 +97,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="modal fade" id="exampleModalToggle3" aria-hidden="true"
-                    aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+                <div class="modal fade" id="pageInscription" aria-hidden="true" aria-labelledby="pageInscriptionLabel"
+                    tabindex="-1">
                     <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                             <div class="modal-header">
