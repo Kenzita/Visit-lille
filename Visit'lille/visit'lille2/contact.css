@@ -67,8 +67,8 @@ h3 {
     text-align: center;
 }
 
-div input, 
-div textarea{
+#formulaire input, 
+#formulaire textarea{
     margin-bottom: 20px;
 }
 form {
@@ -107,13 +107,13 @@ footer div{
      justify-content: space-around;
  }
 
-footer input{
+#newsletter {
     background-color:#ffffff96;
     color: #373234;
     margin-right: 0;
 }
 
-footer button{
+#submitemail {
 color: #E8DCCC;
 background-color: #2E294E;
 border-radius: 30px;
