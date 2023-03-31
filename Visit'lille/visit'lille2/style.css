@@ -1,0 +1,137 @@
+
+body {
+    background-color: #ffffff;
+}
+
+main {
+    justify-content: center;
+    flex-direction:row;
+    margin: 0;
+   padding-top: 20px;
+}
+
+/************* header ***************/
+
+header {
+    margin-top: 20px;
+    height: 40px;
+    background-color: #1b998a85;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+width:100%;
+}
+
+li a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+li a:visited {
+    color: #ffffff;
+}
+
+li a:hover {
+    transform: scale(1.1);
+    font-size: x-large;
+}
+
+#menu {
+    width: 80%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18;
+    margin: 0;
+    padding: 0%;
+    color:#ffffff
+}
+
+/************* header ***************/
+
+#partenaires img{
+width: 130px;
+}
+div h2{
+    margin: 0;
+    padding-top: 2%;
+    color: #373234;
+    text-align: center;
+}
+#partenaires{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.carousel-inner img{
+    width: 600px;
+    width: 800px;
+    margin: 0;
+}
+
+#quefaire {
+    padding: 5% 0 ;
+}
+
+/************* footer ***************/
+
+footer{
+    padding: 50px;
+    color:#ffffff;
+    background-color: #1B998B ;
+    display: flex;
+    justify-content: center;
+    font-size: small;
+}
+
+footer div{
+    width: 30%;
+    text-align: left;
+}
+
+#logofooter img{
+    width: 25px;
+ }
+
+#logofooter{
+     margin: 2% 2% 2% 0;
+     width: 150px;
+     display: flex;
+     justify-content: space-around;
+ }
+
+footer input{
+    background-color:#ffffff96;
+    color: #373234;
+    margin-right: 0;
+}
+
+footer button{
+color: #E8DCCC;
+background-color: #2E294E;
+border-radius: 30px;
+}
+
+#hotel{
+    background-color:white;
+    padding: 5%;
+    color: darkblue;
+    display: flex;
+    align-items: center;
+flex-direction: column;
+justify-content: space-between;
+}
+
+#hotel h2{
+    padding: 10px;
+}
+
+/************* footer ***************/
+
