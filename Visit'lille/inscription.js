@@ -25,9 +25,13 @@ const inputPassword = document.getElementById("pw2");
 const inputPasswordConfirm = document.getElementById("pw3");
 const submitBtn = document.getElementById("insc");
 
+const typeText = document.querySelectorAll("input");
+//console.log("typeText");
+let inputs = [inputPrenom, inputNom, inputEmail, inputPassword, inputPasswordConfirm];
+
 submitBtn.addEventListener("click", (e) => {
     e.preventDefault();
-    if (inputPassword.value === inputPasswordConfirm.value) {
+    if (inputPassword.value === inputPasswordConfirm.value && inputs.parameter.value != "") {
         dataClient.push(
             new Personne(
                 inputNom.value,
@@ -39,11 +43,15 @@ submitBtn.addEventListener("click", (e) => {
         alert("Inscription réussie !");
 
     } else {
-        alert("Le mot de passe et sa confirmation ne sont pas identiques !")
+        for (const _input of inputs) {
+            if (inputs.value = null) {
+                alert(`le champ ${inputs.parameter}n'est pas renseigné`)
+            } else {
+            }
+            alert("Le mot de passe et sa confirmation ne sont pas identiques !")
+        }
+        console.log(dataClient);
+        localStorage.setItem("dataClient", JSON.stringify(dataClient));
     }
-    console.log(dataClient);
-    localStorage.setItem("dataClient", JSON.stringify(dataClient));
-
     // dataClient : [ {""nom" : "machin", "prenom": "truc"    }]
 })
-

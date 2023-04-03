@@ -50,13 +50,21 @@ a {
 .modal-body {
     display: flex;
     flex-flow: column wrap;
-    /* justify-content: space-between; */
+    /* justify-content: space-around; */
     align-content: center;
     text-align: center;
     margin: 50px;
     padding: 0px;
     /* height: 175px; */
     color: black;
+}
+
+.btn.btn-link {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding-top: 25px;
+    align-content: center;
 }
 
 #val {
@@ -88,10 +96,17 @@ a {
     width: 30%;
     align-self: center;
     justify-content: center;
-        
-
 }
 
+#subCode {
+    display: flex;
+    border-radius: 25px;
+    border-width: 4px;
+    width: 33%;
+    margin-top: 20px;
+    justify-content: center;
+    align-self: center;
+}
 
 .modal-footer {
     display: flex;

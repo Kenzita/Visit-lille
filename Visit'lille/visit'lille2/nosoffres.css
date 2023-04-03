@@ -1,7 +1,7 @@
-
 body {
     background-color: #ffffff;
 }
+
 header {
     margin-top: 20px;
     height: 40px;
@@ -11,10 +11,12 @@ header {
     justify-content: space-around;
     align-items: center;
 }
+
 header img {
-width:100%;
+    width: 100%;
 }
-#menu{
+
+#menu {
     width: 80%;
     list-style-type: none;
     display: flex;
@@ -27,8 +29,9 @@ width:100%;
 
 main {
     margin: 0;
-   padding-top: 20px;
+    padding-top: 20px;
 }
+
 li a:link {
     text-decoration: none;
     color: #ffffff;
@@ -41,4 +44,95 @@ li a:visited {
 li a:hover {
     transform: scale(1.1);
     font-size: x-large;
+}
+
+.catalog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1.25rem;
+}
+
+article {
+    max-height: 800px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div article h1 {
+    font-size: 40px;
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+div article h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+div article h3 {
+    font-size: 25px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+#clq,
+#dcv,
+#exc {
+    width: 90%;
+    float: inline-start;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-style: ridge;
+    border-radius: 50px;
+    border-color: aqua;
+    animation: rotateY 2s ease-out;
+    /* fadeIn 4s ease-in; */
+}
+
+@-webkit-keyframes rotateY {
+    from {
+        -webkit-transform: rotateY(0deg)
+    }
+
+    to {
+        -webkit-transform: rotateY(360deg)
+    }
+}
+
+/* @-webkit-keyframes fadeIn {
+    from {
+        -webkit-transition: fadeIn 0%;
+    }
+
+    to {
+        -webkit-transition: fadeIn 100%;
+    }
+} */
+
+.barred {
+    display: flex;
+    font-weight: lighter;
+    text-decoration-line: line-through;
+    opacity: 33%;
+}
+
+
+.new {
+    display: flex;
+    color: crimson;
+    font-style: oblique;
+    font-weight: bold;
 }

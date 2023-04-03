@@ -18,7 +18,9 @@ if (stringDataClient) {
 const inputEmail = document.getElementById("add");
 const inputPassword = document.getElementById("pw");
 const connexionBtn = document.getElementById("sub");
-let profil;
+
+const typeText = document.querySelectorAll("input");
+let inputs = [email, password];
 
 alert("biroute");
 connexionBtn.addEventListener("click", (e) => {
@@ -29,10 +31,19 @@ connexionBtn.addEventListener("click", (e) => {
             profil = client;
             alert("Connection établie !")
             localStorage.setItem("connexion", "connecté")
+        } else {
+            for (const _input of inputs) {
+                if (inputs.value == "") {
+                    alert(`le champ ${inputs.parameter}n'est pas renseigné`)
+                }
+
+            }
         }
     }
 })
 
+if (inputs.value == "") {
 
+} else {
 
-
+}
