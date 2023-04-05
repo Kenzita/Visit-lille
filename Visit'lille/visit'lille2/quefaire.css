@@ -1,6 +1,11 @@
 body {
     background-color: #ffffff;
 }
+.bgstyle{
+    filter:grayscale(100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 main {
     justify-content: center;
@@ -12,15 +17,30 @@ main {
 /************* header ***************/
 
 header {
-    margin-top: 20px;
-    height: 40px;
-    background-color: #1b998a85;
-    color: #ffffff;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
+        height: 20px;
+        color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #55868064;
+       padding: 20px;
+       margin: 20px 0;
+    }
+    
+    
+    h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        height: 200px;
+    }
+    
+    hr{
+       margin: 0;
+       border: solid #000000;
+    }
+   
 header img {
     width: 100%;
 }
@@ -67,18 +87,17 @@ article h2 {
     padding: 0 20px;
     text-align: center;
     font-size: small;
-    color: #d84439d1;
+    color: #000000d1;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
-    background-color: #E8DCCC;
+    background-color: #ffffff;
     background-image: linear-gradient(to top left, rgba(98, 12, 12, 0.32), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .styled:hover {
-    background-color: #D84339;
+    background-color:#000000;
     color: #E8DCCC;
-
 }
 
 .styled:active {
@@ -125,6 +144,16 @@ section img:hover {
     /* transform:  scale(1.1); */
     scale: 1.1;
 
+    transition: all  1.5s ease;
+    filter: grayscale(100%);
+}
+
+#citadelle{
+    margin: 3px;
+}
+section img:hover{
+scale :1.1;
+filter: grayscale(0%);
 }
 
 #section1,
