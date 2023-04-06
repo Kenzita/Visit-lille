@@ -51,7 +51,7 @@ li a:hover {
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
-    padding: 1.25rem;
+    padding: 1.5rem;
 }
 
 article {
@@ -59,38 +59,61 @@ article {
     height: 550px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: beige;
+    justify-content: space-around;
+    align-items: justify;
+    background-color: rgba(235, 235, 83, 0.295);
+
 }
 
 div article h1 {
-    font-size: 40px;
+    font-size: 25px;
     font-style: italic;
+    font-weight: bolder;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 15px;
+    /* padding: 10px 10px 0px 80px; */
+    text-align: center;
 }
 
 div article h2 {
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 30px;
+    font-weight: bolder;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
+    /* padding: 0px 10px 0px 80p */
+    text-align: center;
 }
 
 div article h3 {
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 600;
     margin: 0;
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
+    padding-left: 80px;
+    text-align: justify;
+}
+
+div article h4 {
+    font-size: 15px;
+    margin: 0px;
+    text-align: center;
+    font-style: italic;
+}
+
+hr {
+    border-radius: 50px;
+    height: 3px;
+    width: 400px;
+    background-color: #1b998a85;
+    margin: none;
+    padding: none;
 }
 
 #clq,
 #dcv,
 #exc {
-    width: 90%;
+    width: 450px;
     float: inline-start;
     margin-left: 10px;
     margin-right: 10px;
@@ -102,60 +125,82 @@ div article h3 {
 }
 
 #clq {
-    animation: fadein1 2s ease, rotation1 2s ease-out translation1 2s ease-in-out;
+    /* animation: fadein1 2s ease, rotation1 2s ease-out, translation1 2s ease-in-out; */
+    animation: fadein1 1s ease, rotation1 2s ease-in-out;
+    background-image: url(image/webm/Shotcut_00_01_14_400-2.png);
+    background-repeat: none;
+    background-position: center;
 }
 
 #dcv {
-    animation: fadein2 2s ease, rotation2 2s ease-out;
-    animation-delay: .75s;
+    animation: fadein2 1s ease, rotation2 2s ease-in-out;
+    animation-delay: 0.75s;
+    animation-fill-mode: backwards;
+    background-image: url(image/webm/Shotcut_00_02_22_360-2.png);
+    background-repeat: none;
+    background-position: center;
 }
 
 #exc {
-    animation: fadein3 2s ease, rotation3 2s ease-out;
+    animation: fadein3 1s ease, rotation3 2s ease-in-out;
     animation-delay: 1.5s;
+    animation-fill-mode: backwards;
+    background-image: url(image/webm/Shotcut_00_01_23_040-2.png);
+    background-repeat: none;
+    background-position: center;
 }
 
 @-webkit-keyframes rotation1 {
     from {
-        -webkit-transform: rotateY(0deg)
+        -webkit-transform: translateX(-50%) rotateY(0deg);
     }
 
     to {
-        -webkit-transform: rotateY(360deg)
+        -webkit-transform: translateX(0%) rotateY(360deg);
     }
 }
 
 @-webkit-keyframes rotation2 {
-    from {
-        -webkit-transform: rotateY(0deg)
+    0% {
+        -webkit-transform: translateX(-50%) rotateY(0deg);
     }
 
-    to {
-        -webkit-transform: rotateY(360deg)
+    100% {
+        -webkit-transform: translateX(0%) rotateY(360deg);
     }
 }
 
 @-webkit-keyframes rotation3 {
     from {
-        -webkit-transform: rotateY(0deg)
+        -webkit-transform: translateX(-50%) rotateY(0deg);
     }
 
     to {
-        -webkit-transform: rotateY(360deg)
+        -webkit-transform: translateX(0%) rotateY(360deg);
     }
 }
+
+/* @keyframes ttt1 {
+    0% {
+        transform: rotateY('0deg') translateX(-150%);
+    }
+
+    100% {
+        transform: rotateY('360deg') translateX(0%);
+    }
+} */
 
 @keyframes fadein1 {
     0% {
         opacity: 0;
     }
 
-    25% {
-        opacity: 0.2;
+    75% {
+        opacity: 0.4;
     }
 
-    50% {
-        opacity: 0.7;
+    90% {
+        opacity: 0.8;
     }
 
     100% {
@@ -168,16 +213,12 @@ div article h3 {
         opacity: 0;
     }
 
-    25% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0.2;
-    }
-
     75% {
-        opacity: 0.7;
+        opacity: 0.4;
+    }
+
+    90% {
+        opacity: 0.8;
     }
 
     100% {
@@ -190,6 +231,46 @@ div article h3 {
         opacity: 0;
     }
 
+    75% {
+        opacity: 0.4;
+    }
+
+    90% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* @keyframes fadein2 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    75% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
+
+/* @keyframes fadein3 {
+    0% {
+        opacity: 0;
+    }
+
     25% {
         opacity: 0.2;
     }
@@ -201,41 +282,83 @@ div article h3 {
     100% {
         opacity: 1;
     }
-}
+} */
 
-@keyframes translation1 {
+/* @keyframes translation1 {
     0% {
+        transform: translateX(-150%);
+    }
+
+    20% {
+        transform: translateX(-150%);
+    }
+
+    25% {
         transform: translateX(-50%);
     }
-    20%{
-        transform: translateX(0%);
-    }
-    25% {
-        transform: translateX(25%);
-    }
+
     50% {
-        transform: translateX(50%);
-    }
-    80% {
-        transform: translateX(90%);
-    }
-    100%{
-        transform: translateX(100%);
+        transform: translateX(-25%);
     }
 
+    80% {
+        transform: translateX(-10%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+} */
+
+#clq:hover {
+    border-color: red;
 }
+
+#dcv:hover {
+    border-color: red;
+}
+
+#exc:hover {
+    border-color: red;
+}
+
+.reserve {
+    border-style: ridge;
+    border-radius: 50px;
+    margin: none;
+    margin-top: 15px;
+    padding: 5px;
+    font-family: cursive;
+    font-size: 30px;
+    max-width: 500px;
+    width: 400px;
+    text-align: center;
+}
+
+.reserve:hover {
+    background-image: url("image/webm/banner00-1.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+/* 
+.reserve::before{
+    background-color: hsla(0, 0%, 0%, 0.26);
+} */
 
 .barred {
     display: flex;
-    font-weight: lighter;
-    text-decoration-line: line-through;
-    opacity: 33%;
+    font-weight: 300;
+    /* text-decoration-line: line-through; */
+    opacity: 50%;
 }
 
 
 .new {
     display: flex;
-    color: crimson;
+    color: orangered;
     font-style: oblique;
-    font-weight: bold;
+    font-weight: bolder;
 }

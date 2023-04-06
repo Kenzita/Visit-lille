@@ -31,8 +31,8 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <h6>Identifiant</h6>
-                                <form>
+                                <form method="POST">
+                                    <h6>Identifiant</h6>
                                     <input required type="text" name="address" id="add">
                                     <h6>Mot de passe</h6>
                                     <input required type="password" name="pass" id="pw">
@@ -59,6 +59,7 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
+                                <form action="actionconnexion.php" method="post"></form>
                                 <h6>Nom</h6>
                                 <input type="text" name="surname" id="name">
                                 <h6>Prénom</h6>
