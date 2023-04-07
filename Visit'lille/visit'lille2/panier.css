@@ -1,0 +1,92 @@
+/* #formule3 {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: first baseline height: fit-content;
+    width: fit-content;
+    border: none border-style: inset;
+    border-width: 5px;
+    border-radius: 10px;
+    margin: none;
+    margin-top: 0
+    padding: 15px;
+    background-color: aquamarine;
+}*/
+
+body {
+    padding: 10px;
+    width: 33%;
+    border-style: ridge;
+    border-radius: 15px;
+    border-width: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.payment {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.modal-header {
+    background-color: #1b998a9c;
+}
+
+.modal-content {
+    display: flex;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 250px;
+    width: auto;
+    border: none;
+    margin: none;
+}
+
+#cnum,
+#cname {
+    width: 200px;
+}
+
+.btn.btn-outline-success {
+    margin: none;
+    /* padding-top:15px; */
+}
+
+#formule5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: none;
+    width: auto;
+    height: auto;
+
+}
+
+.date-cvv {
+    display: flex;
+    flex-flow: row;
+    margin: none;
+    justify-content: space-between;
+    width: 26rem;
+}
+
+#cvv {
+    width: 35%;
+}
+
+input,
+select {
+    border-color: green;
+    border-style: ridge;
+    border-radius: 10px;
+}
